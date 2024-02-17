@@ -1,0 +1,7 @@
+users:
+  - name: airbyte
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxdK5aZD5a/2B4ox7hhyF6514O//29zgwLKxC5CZMGlVGbKGWsWx1ndr4X8vc2CX5WqXDXXEClT4vMGfEvVnkeR88QtkBvOlTnD/ZLZ4S2EAChYhiLuZj36eDRNsmlwSpegtf5DjS9y1JwzWjQf4lY/BHsrg0EVgqkVQEyWPyyrB0e/bOWqDKrAChTgcELQbE9xfoYxZ9zGvD1KL1jJpca8t0juKHJSjX9iJN4CmC5EIARv2YtgmoDcrIaTXaaPGqtbmvjjXkg3j8iMe/W6CfQmEHKlJhE6XVexMODqO+HPMBVF+Uzor49v1sLlmVQI7vrv1P9YYz+XOlFxi8TFwXz andrejspiridonov@PF0SXYMA.kontur
