@@ -15,7 +15,15 @@
 				"GitHub.vscode-pull-request-github",
 				"nemesv.copy-file-name",
 				"hashicorp.terraform"
-			]
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/bin/zsh"
+						}
+					}
+			}
         }
     },
     "features": {
@@ -29,5 +37,11 @@
 			"userGid": "automatic"
 		},
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
-    }
+    },
+	"postCreateCommand": {
+		"terraformrc_to_root": "cp terraform/terraformrc ~/.terraformrc",
+		"yc_init": "yc config set service-account-key .yc_svc_key.json"
+	},
+	"postAttachCommand": {
+	}
 }
